@@ -89,7 +89,7 @@ width: 100%;
 
 `
 Wrapper.ForgotPsw=styled.div`
-
+cursor: pointer;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;

@@ -4,10 +4,13 @@ import {ReactComponent as Cart} from "../../assets/cart.svg"
 import { MainButton } from '../../components/button/style'
 import { AuthContext } from '../../auth'
 import { useNavigate } from 'react-router-dom'
-
+import {notification} from "antd"
+const notifyError=(message)=>{
+    return notification.error({message,placement:"top"})
+}
 function Login() {
     const navigator=useNavigate()
-    const {authData,setAuthed,authed}=useContext(AuthContext)
+    const {authData,setAuthed}=useContext(AuthContext)
 const [isPswWrong,setIsPswWrong]=useState(false)
 const [userData,setUserData]=useState({
     userName:"",
@@ -32,12 +35,11 @@ setUserData((prev)=>{
 const handleOnSubmit=(e)=>{
     e.preventDefault()
     if(isPswWrong)return;
-    console.log(userData)
-if(userData.userName!==authData.userName) return alert("the user name is wrong!")
-if(userData.password!==authData.password)return alert("the password is wrong!")
+    if (userData.userName !== authData.userName || userData.password !== authData.password) {
+        return notifyError("The provided username or password is wrong!");
+      }
 setAuthed(true)
 navigator("/")
-
 }
   return (
     <Wrapper>
