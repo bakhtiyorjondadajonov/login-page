@@ -33,12 +33,9 @@ Wrapper.InputContainer=styled.div`
     flex-direction: column;
     width: 100%;
     gap: 2rem;
-
-
 `
 
 Wrapper.InputWrapper=styled.div`
-    
 position: relative;
 
 `
@@ -101,7 +98,7 @@ text-align: right;
 
 color: #FFFFFF;
 `
-Wrapper.Error=styled.div`
+Wrapper.Warning=styled.div`
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
