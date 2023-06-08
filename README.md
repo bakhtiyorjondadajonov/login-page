@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Project Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project involves creating a responsive login page based on the design provided . The goal is to implement the login functionality using a dummy hardcoded test account and validate the password input according to given specific criteria.
 
 ## Available Scripts
 
