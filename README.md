@@ -1,6 +1,10 @@
 # Project Description
 
 This project involves creating a responsive login page based on the design provided . The goal is to implement the login functionality using a dummy hardcoded test account and validate the password input according to given specific criteria.
+Users can log in using the following credentials:
+
+Username: test@luxpmsoft.com
+Password: test1234!
 
 ## Available Scripts
 
