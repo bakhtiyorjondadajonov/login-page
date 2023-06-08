@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { ReactComponent as Cart } from "../../assets/cart.svg";
 import { useNavigate } from "react-router-dom";
-
+//Styles
 import Wrapper from "./style";
 import { MainButton } from "../../components/button/style";
 import { notification } from "antd";
