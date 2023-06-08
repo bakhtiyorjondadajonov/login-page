@@ -9,4 +9,5 @@ function RequireAuth({ children }) {
   // If the user is authenticated, render the `children` components
   return children;
 }
+
 export default RequireAuth;

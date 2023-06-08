@@ -1,10 +1,13 @@
 import React, { useContext, useState } from "react";
-import Wrapper from "./style";
 import { ReactComponent as Cart } from "../../assets/cart.svg";
-import { MainButton } from "../../components/button/style";
-import { AuthContext } from "../../auth";
 import { useNavigate } from "react-router-dom";
+
+import Wrapper from "./style";
+import { MainButton } from "../../components/button/style";
 import { notification } from "antd";
+
+import { AuthContext } from "../../auth";
+
 const notifyError = (message) => {
   return notification.error({ message, placement: "top" });
 };

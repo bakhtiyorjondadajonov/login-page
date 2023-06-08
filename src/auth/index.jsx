@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+
 export const AuthContext = createContext({
   authed: null,
   setAuthed: () => null,
@@ -7,6 +8,7 @@ export const AuthContext = createContext({
     password: "test1234!",
   },
 });
+
 function AuthProvider({ children }) {
   const authData = {
     userName: "test@luxpmsoft.com",

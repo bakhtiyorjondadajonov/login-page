@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import bg from "../../assets/bg.png";
+
 import { ReactComponent as User } from "../../assets/user.svg";
 import { ReactComponent as Lock } from "../../assets/lock.svg";
+
 const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
