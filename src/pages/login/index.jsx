@@ -32,7 +32,9 @@ function Login() {
     }
     // If the input field is the password field, validate the password and update the `password` property in the `userData` state
     if (name === "password") {
-      const regex = /^(?=.*[a-z])(?=.*\d).+$/;
+      const regex =
+        /^(?=.*[a-z])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])(?=.*\d).+$/;
+
       regex.test(value) ? setIsPswWrong(false) : setIsPswWrong(true);
       setUserData((prev) => {
         return { ...prev, password: value };
